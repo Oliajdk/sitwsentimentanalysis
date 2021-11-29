@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <h1>results!</h1>
+        <div class="div-1" style="background-color: #ffffe6;">
+        <!--<p>{{recup}}</p>-->
+        
+            <p>{{recup[0]}} </p>
+        
+        </div>
+        <div class="div-2" style="background-color: #d6f5d6;">
+            <!--<p>{{recup}}</p>-->
+            
+                <p>{{recup[1]}} </p>
+            
+            </div>
+            <div class="div-3" style="background-color: #ffcccc;">
+                <!--<p>{{recup}}</p>-->
+                
+                    <p>{{recup[2]}} </p>
+                
+                </div>
+                <p>Positive: {{recup[1]|length}}, Negative: {{recup[2]|length}}</p>         
+       <img src="{{url_for('static', filename='graph.png')}}" align="middle" />
+       
+
+    </body>
+</html>

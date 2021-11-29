@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <div class="div-1" style="background-color: #ffcccc;">
+        <h1>sentimentanalysis sur un TEXTE</h1>
+
+        <form action="/results" method="post">
+            <p>Texte::</p>
+            
+            <p><input style="width: 50%;"  type="text" name="nm" /></p>
+            <p><input type="submit" value="submit"/></p>
+             
+            <input type="radio" id="zemoui" name="tw" value="zemoui">
+            <label for="zemoui">Zemmour since:2021-11-20 lang:fr</label>
+            <input type="radio" id="zemnon" name="tw" value="zemnon" checked>
+             <label for="zemnon">Non</label></br>
+            <p>Negation ?</p>   
+            <input type="radio" id="oui" name="negat" value="oui" checked>
+            <label for="oui">Oui</label>
+            <input type="radio" id="non" name="negat" value="non">
+            <label for="non">Non</label>
+        </form>
+            </div>
+
+        <div class="div-2" style="background-color: #EBEBEB">
+        <h1>sentimentanalysis sur des TWEETS</h1>
+        <form action="/resultstw" method="post">
+            <p>Keyword tweet:</p>
+            <p><input style="width: 50%;" type="text" name="ab" value="Conjuring since:2021-11-24 lang:fr"/></p>
+            <p><input type="submit" value="submit"/></p>
+            <p>Negation ?</p>    
+            <input type="radio" id="oui1" name="negat1" value="oui" checked>
+            <label for="oui">Oui</label>
+            <input type="radio" id="non1" name="negat1" value="non">
+            <label for="non">Non</label>
+        </form>
+    </div>
+
+
+
+
+    </body>
+</html>
+

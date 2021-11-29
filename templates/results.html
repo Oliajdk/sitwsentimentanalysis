@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <h1>results!</h1>
+
+            <div class="div-2" style="background-color: #d6f5d6;">
+                <!--<p>{{recup}}</p>-->
+                
+                    <p>{{recup[0]}} </p>
+                
+                </div>
+                <div class="div-3" style="background-color: #ffcccc;">
+                    <!--<p>{{recup}}</p>-->
+                    
+                        <p>{{recup[1]}} </p>
+                    
+                    </div>
+        <p>Positive: {{recup[0]|length}}, Negative: {{recup[1]|length}}</p>
+       <img src="{{url_for('static', filename='graph.png')}}" align="middle" />
+
+    </body>
+</html>
